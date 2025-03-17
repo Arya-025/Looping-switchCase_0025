@@ -14,7 +14,8 @@ int main(){
     float panjang, lebar;
     float jejari
 
-    do{
+    do
+    {
         cout << "menu" << endl;
         cout << "1. luas persegi panjang" << endl;
         cout << "2. luas lingkaran" << endl;
@@ -22,8 +23,30 @@ int main(){
 
         cout << "pilihan (1/2/3) = ";
         cin >> pilihan;
+        
+        switch (pilihan)
+        {
+            case 1:
+                cout << "hitung luas persegi panjang " << endl;
+                cout << "masukkan panjang = ";
+                cin >> panjang;
+                cout << "masukkan lebar = ";
+                cin >> lebar;
+                cout << "luas persegi panjang = " << luaspersegipanjang(panjang, lebar);
+                break;
+            case 2:
+                cout << "hitung luas lingkaran" << endl;
+                cout << "masukkan jari-jari = ";
+                cin >> jejari;
+                cout << "luas lingkaran = " << luaslingkaran(jejari) << endl;
+                break;
+            case 3:
+                break;
+            default:
+                cout << "pilihan salah, pilihan harus si antara 1-3";
+                break;
+        }
 
-
-    }
+    }while(pilihan ! = 3);
 
 }
