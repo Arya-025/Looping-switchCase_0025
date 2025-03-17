@@ -18,5 +18,15 @@ int main ()
     cout << endl;
 
     cout << "perulangan for pencacah turun" << endl;
-    
+    // perulangan dengan for
+    for (n = 5; n > 0; n--)
+    {
+        cout << "nilai n + " << "Selamat datang" << endl;
+    }
+    cout << "nilai n terakhir = " << n;
+    cout << endl;
+
+    srand(time(0));
+
+    cout << "nilai awal n = " << n << endl;
 }
