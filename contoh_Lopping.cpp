@@ -45,5 +45,15 @@ int main ()
     n = rand() % 10;
 
     cout << "nilai awal n =" << n << endl;
+
+    do
+    {
+        cout << "nilai n = " << n << endl;
+        n = rand() % 10;
+        perulanganDo++;
+    } while (n < 7);
+    cout << "jumlah perulangan = " << perulanganWhile << endl;
+    cout << "nilai n terakhir = " << n << endl;
+    
 }
 
