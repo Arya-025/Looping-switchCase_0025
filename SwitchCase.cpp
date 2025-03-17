@@ -14,4 +14,16 @@ int main(){
     float panjang, lebar;
     float jejari
 
+    do{
+        cout << "menu" << endl;
+        cout << "1. luas persegi panjang" << endl;
+        cout << "2. luas lingkaran" << endl;
+        cout << "3. keluar" << endl;
+
+        cout << "pilihan (1/2/3) = ";
+        cin >> pilihan;
+
+
+    }
+
 }
