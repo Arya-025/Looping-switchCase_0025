@@ -29,4 +29,21 @@ int main ()
     srand(time(0));
 
     cout << "nilai awal n = " << n << endl;
+    while (n < 7)
+    {
+        cout << "nilai n = " << endl;
+        n = rand () % 10;
+        perulanganWhile++;
+    }
+    cout << "jumlah perulangan = " << perulanganWhile << endl;
+    cout << "nilai n terakhir = " << n << endl;
+
+    cout << "perulangan do while" << endl;
+
+    srand(time(0));
+
+    n = rand() % 10;
+
+    cout << "nilai awal n =" << n << endl;
 }
+
